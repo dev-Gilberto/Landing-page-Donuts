@@ -84,9 +84,24 @@ section#principal {
     
 }
 
-div#img > img {
+
+
+#imagem {
     padding-right: 100px;
+    animation: flutuar 4s ease-in-out infinite;
 }
+
+
+@keyframes flutuar {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+
 
 div#info {
     margin-left: 50px;

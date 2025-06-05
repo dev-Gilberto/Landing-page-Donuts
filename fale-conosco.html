@@ -54,7 +54,7 @@
 
         #butao{
             margin-top: 20px;
-            padding: 5px 10px;
+            padding: 5px 0px;
             border: none;
             border-radius: 5px;
             background-color: #923282;
@@ -67,16 +67,29 @@
             background-color: #D96C89;
             border: 1px solid #923282;
         }
+
+        
     </style>
 </head>
 <body>
     <main>
         <h1>Mande sua duvida</h1>
 
-        <input type="text" name="nome" id="nome" placeholder="Seu nome">
-        <input type="email" name="email" id="email" placeholder="Email">
+        <input type="text" name="nome" id="nome" placeholder="Seu nome" >
+        <input type="email" name="email" id="email" placeholder="Email" >
         <textarea name="mensagem" id="mensagem" placeholder="Digite algo aqui"></textarea>
-        <button id="butao">Enviar Mensagem</button>
+        <button id="butao" onclick="enviar()">Enviar</button>
     </main>
+
+
+    <script>
+        function enviar() {
+          let nome =  window.document.getElementById('nome').value = '';
+          let email = window.document.getElementById('email').value = '';
+          let mensagem = window.document.getElementById('mensagem').value = '';
+
+            alert(`[Mensagem Enviada] Voltaremos com a resposta!`)
+        }
+    </script>
 </body>
 </html>
