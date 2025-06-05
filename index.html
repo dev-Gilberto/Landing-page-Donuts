@@ -12,12 +12,22 @@
         <header>
             <img src="imagens/WhatsApp_Image_2025-06-03_at_22.41.51-removebg-preview.png" alt="logo">
 
-            <nav>
-                <a href="" target="_blank">Sobre Nós</a>
-                <a href="#">Sabores</a>
-                <a href="fale-conosco.html" target="_blank">Fale-Conosco</a>
+
+                    <div id="icone-menu" onclick="clicar()">
+                        <img  src="imagens/menu_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                    </div>
+
                 
-            </nav>
+                    <menu id="itens">
+                        <nav>
+                            <a href="" target="_blank">Sobre</a>
+                            <a href="#">Sabores</a>
+                            <a href="fale-conosco.html" target="_blank">Fale-Conosco</a>
+                        </nav>
+                    </menu>
+                
+            
+
         </header>
 
         <section id="principal">
@@ -32,6 +42,17 @@
             </div>
         </section>
     </main>
+
+
+    <script>
+        function clicar() {
+            if (itens.style.display == 'block') {
+            itens.style.display = 'none'
+            } else {
+                 itens.style.display = 'block'
+            }
+        }
+    </script>
 
   
 </body>

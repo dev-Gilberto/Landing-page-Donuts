@@ -52,17 +52,17 @@ header > img {
     padding-top: 20px;
 }
 
-header > nav > a > img {
+header > div#itens > nav > a > img {
     width: 25px;
    padding-left: 100px;
    padding-right: 80px;
 }
 
-header > nav {
+header > menu#itens > nav {
     margin-right: 80px;
 }
 
-header > nav > a {
+header> menu#itens > nav > a {
     padding-right: 50px;
     text-decoration: none;
     color: var(--cor3);
@@ -71,7 +71,7 @@ header > nav > a {
     font-family: var(--font1);
 }
 
-header > nav > a:hover {
+header > menu#itens > nav > a:hover {
     text-decoration: underline var(--cor2);
     
     color: var(--cor3);
@@ -158,3 +158,54 @@ button >  a {
     width: 500px;
     background-color: white;
 }
+
+
+@media screen and (max-width: 600px) {
+    header {
+        
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+
+        padding-top: 85px;
+        
+    } 
+
+    header > img {
+        margin-bottom: 50px;
+    }
+    
+    menu {
+        
+        width: 100%;
+    }
+
+    div#icone-menu {
+        padding-left: 40%;
+        padding-bottom: 10px;
+        
+    }
+
+    nav {
+        width: 100%;
+        padding-left: 25%;
+    }
+
+    nav > a {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+
+    img#menu {
+        width: 20px;
+        
+    }
+    
+
+    div#icone-menu {
+        margin: auto;
+        width: 40px;
+    }
+} 
